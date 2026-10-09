@@ -1,38 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Class 10 Maths | Ansh Study</title>
+
+<title>Ansh Maths Academy | MP Board Class 10</title>
 
 <style>
 *{
-  box-sizing:border-box;
   margin:0;
   padding:0;
-  font-family:Arial,sans-serif;
+  box-sizing:border-box;
+  font-family:Arial,"Noto Sans Devanagari",sans-serif;
 }
 
 body{
-  background:#f4f7fb;
-  color:#222;
-  line-height:1.6;
+  background:#f1f5f9;
+  color:#172033;
+  line-height:1.8;
+  transition:.3s;
 }
 
 header{
-  background:linear-gradient(135deg,#4f46e5,#7c3aed);
+  background:linear-gradient(135deg,#4338ca,#7c3aed);
   color:white;
-  text-align:center;
   padding:35px 15px;
+  text-align:center;
 }
 
 header h1{
-  font-size:32px;
-  margin-bottom:8px;
+  font-size:30px;
 }
 
 header p{
-  font-size:17px;
+  margin-top:5px;
 }
 
 nav{
@@ -47,137 +48,137 @@ nav{
 nav a{
   color:white;
   text-decoration:none;
-  margin:0 10px;
-  font-weight:bold;
-}
-
-nav a:hover{
-  color:#a5b4fc;
+  margin:0 9px;
+  font-size:14px;
 }
 
 .container{
-  width:92%;
-  max-width:1000px;
-  margin:25px auto;
+  max-width:1050px;
+  width:94%;
+  margin:22px auto;
 }
 
 .card{
   background:white;
   padding:22px;
-  margin-bottom:20px;
-  border-radius:15px;
-  box-shadow:0 5px 18px rgba(0,0,0,.08);
+  border-radius:14px;
+  margin-bottom:22px;
+  box-shadow:0 4px 15px #00000010;
 }
 
-.card h2{
+h2{
   color:#4f46e5;
   margin-bottom:12px;
 }
 
-.chapter{
-  border-left:5px solid #4f46e5;
-  padding:15px;
-  margin:12px 0;
-  background:#f8faff;
+h3{
+  margin-bottom:8px;
+}
+
+input{
+  width:100%;
+  padding:13px;
+  border:1px solid #cbd5e1;
   border-radius:8px;
-}
-
-.question{
-  margin-top:18px;
-  padding:16px;
-  background:#f9fafb;
-  border-radius:10px;
-  border:1px solid #e5e7eb;
-}
-
-.question h3{
-  color:#111827;
-}
-
-.answer{
-  margin-top:10px;
-  background:#ecfdf5;
-  border-left:4px solid #10b981;
-  padding:12px;
-  border-radius:6px;
-}
-
-.formula{
-  background:#fff7ed;
-  border-left:4px solid #f97316;
-  padding:12px;
-  margin:10px 0;
-  border-radius:6px;
+  font-size:16px;
+  margin:12px 0;
 }
 
 button{
-  border:none;
   background:#4f46e5;
   color:white;
-  padding:11px 18px;
+  border:0;
   border-radius:8px;
+  padding:10px 15px;
   cursor:pointer;
-  margin-top:10px;
-  font-size:15px;
+  margin:5px 3px;
 }
 
 button:hover{
   background:#3730a3;
 }
 
-.quiz-option{
+.chapter{
+  background:#eef2ff;
+  border-left:5px solid #4f46e5;
+  padding:13px;
+  border-radius:8px;
+  margin:10px 0;
+}
+
+.chapter button{
+  margin-top:8px;
+}
+
+.question{
+  background:#f8fafc;
+  padding:16px;
+  border:1px solid #e2e8f0;
+  border-radius:10px;
+  margin:15px 0;
+}
+
+.answer{
+  background:#dcfce7;
+  border-left:4px solid #16a34a;
+  padding:12px;
+  margin-top:12px;
+  border-radius:5px;
+}
+
+.formula{
+  background:#fff7ed;
+  border-left:4px solid #f97316;
+  padding:12px;
+  margin:12px 0;
+  border-radius:5px;
+}
+
+.hidden{
+  display:none;
+}
+
+.option{
   display:block;
   width:100%;
   text-align:left;
   background:#eef2ff;
-  color:#111827;
+  color:#172033;
   margin:8px 0;
 }
 
-.quiz-option:hover{
-  background:#c7d2fe;
-}
-
-#result{
+#quizResult{
   font-weight:bold;
-  margin-top:15px;
-}
-
-.search{
-  width:100%;
-  padding:13px;
-  border:2px solid #ddd;
-  border-radius:10px;
-  margin-top:10px;
-  font-size:16px;
+  margin-top:12px;
 }
 
 footer{
   background:#111827;
   color:white;
-  text-align:center;
   padding:25px;
-  margin-top:30px;
+  text-align:center;
 }
 
 .dark{
-  background:#111827;
-  color:#eee;
+  background:#0f172a;
+  color:white;
 }
 
 .dark .card{
-  background:#1f2937;
-  color:#eee;
+  background:#1e293b;
+  color:white;
 }
 
 .dark .chapter,
-.dark .question{
-  background:#374151;
-  border-color:#4b5563;
+.dark .question,
+.dark .option{
+  background:#334155;
+  color:white;
+  border-color:#475569;
 }
 
 .dark .answer{
-  background:#064e3b;
+  background:#14532d;
 }
 
 .dark .formula{
@@ -186,13 +187,16 @@ footer{
 
 @media(max-width:600px){
   header h1{
-    font-size:25px;
+    font-size:24px;
   }
 
   nav a{
     display:inline-block;
     margin:4px;
-    font-size:14px;
+  }
+
+  .card{
+    padding:15px;
   }
 }
 </style>
@@ -201,247 +205,323 @@ footer{
 <body>
 
 <header>
-  <h1>📚 Class 10 Maths</h1>
-  <p>Learn • Practice • Improve</p>
-  <p>Created by Ansh Nayak</p>
+  <h1>📚 Ansh Maths Academy</h1>
+  <p>MP Board कक्षा 10 गणित | हिंदी माध्यम</p>
+  <p>सीखो • समझो • अभ्यास करो</p>
 </header>
 
 <nav>
-  <a href="#home">Home</a>
-  <a href="#chapters">Chapters</a>
-  <a href="#lesson1">Lesson 1</a>
-  <a href="#quiz">Quiz</a>
+  <a href="#home">होम</a>
+  <a href="#chapters">अध्याय</a>
+  <a href="#study">पढ़ाई</a>
+  <a href="#quiz">क्विज़</a>
 </nav>
 
-<div class="container">
+<main class="container">
 
-<section id="home" class="card">
-  <h2>🏠 Welcome</h2>
+<section class="card" id="home">
+  <h2>नमस्ते विद्यार्थी! 👋</h2>
   <p>
-    Welcome to the Class 10 Maths learning website.
-    यहाँ आप Maths के chapters, formulas, questions और answers
-    पढ़ सकते हैं और quiz भी दे सकते हैं।
+    Ansh Maths Academy में आपका स्वागत है।
+    यहाँ कक्षा 10 गणित के अध्याय, महत्वपूर्ण सूत्र,
+    उदाहरण और अभ्यास प्रश्न पढ़ें।
+  </p>
+  <button onclick="toggleDark()">🌙 डार्क मोड</button>
+</section>
+
+<section class="card" id="chapters">
+  <h2>📖 गणित के 13 अध्याय</h2>
+
+  <input id="search" type="text"
+  placeholder="अध्याय खोजें..."
+  oninput="searchChapters()">
+
+  <div id="chapterList"></div>
+</section>
+
+<section class="card" id="study">
+  <h2>✏️ अध्याय 1: वास्तविक संख्याएँ</h2>
+
+  <p>
+    वास्तविक संख्याओं में परिमेय और अपरिमेय संख्याएँ शामिल होती हैं।
+    इस अध्याय में अंकगणित की आधारभूत प्रमेय और अभाज्य गुणनखंडों
+    का उपयोग सीखते हैं।
   </p>
 
-  <button onclick="toggleDark()">🌙 Dark Mode</button>
-</section>
-
-<section id="chapters" class="card">
-  <h2>📖 Class 10 Maths Chapters</h2>
-
-  <div class="chapter">1. Real Numbers</div>
-  <div class="chapter">2. Polynomials</div>
-  <div class="chapter">3. Pair of Linear Equations in Two Variables</div>
-  <div class="chapter">4. Quadratic Equations</div>
-  <div class="chapter">5. Arithmetic Progressions</div>
-  <div class="chapter">6. Triangles</div>
-  <div class="chapter">7. Coordinate Geometry</div>
-  <div class="chapter">8. Introduction to Trigonometry</div>
-  <div class="chapter">9. Some Applications of Trigonometry</div>
-  <div class="chapter">10. Circles</div>
-  <div class="chapter">11. Areas Related to Circles</div>
-  <div class="chapter">12. Surface Areas and Volumes</div>
-  <div class="chapter">13. Statistics</div>
-  <div class="chapter">14. Probability</div>
-</section>
-
-<section id="lesson1" class="card">
-
-  <h2>📘 Lesson 1 — Real Numbers</h2>
-
-  <input
-    type="text"
-    id="search"
-    class="search"
-    placeholder="🔍 Search question..."
-    onkeyup="searchQuestions()"
-  >
-
-  <h3 style="margin-top:20px;">⭐ Important Concepts</h3>
+  <h3>महत्वपूर्ण सूत्र</h3>
 
   <div class="formula">
-    <b>Euclid's Division Lemma:</b><br>
-    a = bq + r, where 0 ≤ r < b
+    <b>यूक्लिड विभाजन एल्गोरिथ्म:</b><br>
+    a = bq + r, जहाँ 0 ≤ r &lt; b
   </div>
 
   <div class="formula">
-    <b>Fundamental Theorem of Arithmetic:</b><br>
-    Every composite number can be expressed as a product of primes,
-    and this factorisation is unique apart from the order of the factors.
+    <b>HCF और LCM का संबंध:</b><br>
+    दो धनात्मक पूर्णांकों का HCF × LCM = दोनों संख्याओं का गुणनफल
   </div>
 
   <div class="formula">
-    <b>For two positive integers:</b><br>
-    HCF × LCM = Product of the two numbers
+    <b>अंकगणित की आधारभूत प्रमेय:</b><br>
+    प्रत्येक भाज्य संख्या को अभाज्य संख्याओं के गुणनफल के रूप में
+    अद्वितीय तरीके से व्यक्त किया जा सकता है, गुणनखंडों के क्रम को छोड़कर।
   </div>
 
-  <div id="questions">
-
-    <div class="question">
-      <h3>Q1. What is Euclid's Division Lemma?</h3>
-      <div class="answer">
-        <b>Answer:</b> For positive integers a and b, there exist unique
-        integers q and r such that:
-        <br><br>
-        <b>a = bq + r</b>, where 0 ≤ r &lt; b.
-      </div>
+  <div class="question">
+    <h3>प्रश्न 1. यूक्लिड विभाजन एल्गोरिथ्म क्या है?</h3>
+    <button onclick="toggleAnswer('a1')">उत्तर देखें</button>
+    <div class="answer hidden" id="a1">
+      <p>
+        यदि a और b धनात्मक पूर्णांक हैं तथा a ≥ b,
+        तो ऐसे अद्वितीय पूर्णांक q और r होते हैं कि:
+      </p>
+      <p><b>a = bq + r, जहाँ 0 ≤ r &lt; b</b></p>
     </div>
+  </div>
 
-    <div class="question">
-      <h3>Q2. Find the HCF of 135 and 225 using Euclid's algorithm.</h3>
-      <div class="answer">
-        <b>Answer:</b><br>
-        225 = 135 × 1 + 90<br>
-        135 = 90 × 1 + 45<br>
-        90 = 45 × 2 + 0<br><br>
-        Therefore, <b>HCF = 45</b>.
-      </div>
+  <div class="question">
+    <h3>प्रश्न 2. यूक्लिड एल्गोरिथ्म से 135 और 225 का HCF ज्ञात कीजिए।</h3>
+    <button onclick="toggleAnswer('a2')">हल देखें</button>
+    <div class="answer hidden" id="a2">
+      <p>225 = 135 × 1 + 90</p>
+      <p>135 = 90 × 1 + 45</p>
+      <p>90 = 45 × 2 + 0</p>
+      <p><b>अतः HCF = 45</b></p>
     </div>
+  </div>
 
-    <div class="question">
-      <h3>Q3. Find the HCF of 96 and 404.</h3>
-      <div class="answer">
-        <b>Answer:</b><br>
-        404 = 96 × 4 + 20<br>
-        96 = 20 × 4 + 16<br>
-        20 = 16 × 1 + 4<br>
-        16 = 4 × 4 + 0<br><br>
-        Therefore, <b>HCF = 4</b>.
-      </div>
+  <div class="question">
+    <h3>प्रश्न 3. 140 का अभाज्य गुणनखंड कीजिए।</h3>
+    <button onclick="toggleAnswer('a3')">हल देखें</button>
+    <div class="answer hidden" id="a3">
+      <p>140 = 2 × 70</p>
+      <p>= 2 × 2 × 35</p>
+      <p>= 2 × 2 × 5 × 7</p>
+      <p><b>अतः 140 = 2² × 5 × 7</b></p>
     </div>
+  </div>
 
-    <div class="question">
-      <h3>Q4. Find the prime factorisation of 140.</h3>
-      <div class="answer">
-        <b>Answer:</b><br>
-        140 = 2 × 70<br>
-        = 2 × 2 × 35<br>
-        = 2² × 5 × 7<br><br>
-        Therefore, <b>140 = 2² × 5 × 7</b>.
-      </div>
+  <div class="question">
+    <h3>प्रश्न 4. 96 और 404 का HCF ज्ञात कीजिए।</h3>
+    <button onclick="toggleAnswer('a4')">हल देखें</button>
+    <div class="answer hidden" id="a4">
+      <p>404 = 96 × 4 + 20</p>
+      <p>96 = 20 × 4 + 16</p>
+      <p>20 = 16 × 1 + 4</p>
+      <p>16 = 4 × 4 + 0</p>
+      <p><b>अतः HCF = 4</b></p>
     </div>
+  </div>
 
-    <div class="question">
-      <h3>Q5. Find the HCF and LCM of 12 and 18.</h3>
-      <div class="answer">
-        <b>Answer:</b><br>
-        12 = 2² × 3<br>
-        18 = 2 × 3²<br><br>
-        HCF = 2 × 3 = <b>6</b><br>
-        LCM = 2² × 3² = <b>36</b>
-      </div>
+  <div class="question">
+    <h3>प्रश्न 5. क्या √2 एक परिमेय संख्या है?</h3>
+    <button onclick="toggleAnswer('a5')">उत्तर देखें</button>
+    <div class="answer hidden" id="a5">
+      नहीं। √2 एक अपरिमेय संख्या है।
+      इसे दो पूर्णांकों के अनुपात p/q के रूप में नहीं लिखा जा सकता,
+      जहाँ q ≠ 0 हो।
     </div>
+  </div>
 
-    <div class="question">
-      <h3>Q6. Is √2 a rational number?</h3>
-      <div class="answer">
-        <b>Answer:</b> No. √2 is an <b>irrational number</b>.
-        It cannot be expressed in the form p/q where p and q are
-        integers and q ≠ 0.
-      </div>
+  <div class="question">
+    <h3>प्रश्न 6. 12 और 18 का HCF तथा LCM ज्ञात कीजिए।</h3>
+    <button onclick="toggleAnswer('a6')">हल देखें</button>
+    <div class="answer hidden" id="a6">
+      <p>12 = 2² × 3</p>
+      <p>18 = 2 × 3²</p>
+      <p>HCF = 2 × 3 = 6</p>
+      <p>LCM = 2² × 3² = 36</p>
+      <p><b>उत्तर: HCF = 6, LCM = 36</b></p>
     </div>
-
-    <div class="question">
-      <h3>Q7. What is a rational number?</h3>
-      <div class="answer">
-        <b>Answer:</b> A number that can be written in the form
-        <b>p/q</b>, where p and q are integers and q ≠ 0,
-        is called a rational number.
-      </div>
-    </div>
-
-    <div class="question">
-      <h3>Q8. What is an irrational number?</h3>
-      <div class="answer">
-        <b>Answer:</b> A number that cannot be expressed in the form
-        p/q, where p and q are integers and q ≠ 0, is called an
-        irrational number.
-        Examples: √2, √3, √5.
-      </div>
-    </div>
-
   </div>
 </section>
 
-<section id="quiz" class="card">
+<section class="card" id="quiz">
+  <h2>🎯 वास्तविक संख्याएँ: क्विज़</h2>
 
-  <h2>🎯 Chapter 1 Quiz</h2>
+  <p id="quizQuestion"></p>
+  <div id="quizOptions"></div>
+  <p id="quizResult"></p>
 
-  <p><b>Question:</b> What is the HCF of 12 and 18?</p>
-
-  <button class="quiz-option" onclick="checkAnswer(1)">A. 2</button>
-  <button class="quiz-option" onclick="checkAnswer(2)">B. 6</button>
-  <button class="quiz-option" onclick="checkAnswer(3)">C. 12</button>
-  <button class="quiz-option" onclick="checkAnswer(4)">D. 36</button>
-
-  <p id="result"></p>
-
+  <button onclick="nextQuestion()">अगला प्रश्न ➜</button>
 </section>
 
 <section class="card">
-  <h2>💡 Study Tips</h2>
-
+  <h2>📌 पढ़ाई के सुझाव</h2>
   <ul>
-    <li>पहले concept समझें।</li>
-    <li>Formula को याद करने के साथ उसका use भी सीखें।</li>
-    <li>हर दिन कुछ questions practice करें।</li>
-    <li>गलत questions को दोबारा solve करें।</li>
-    <li>Quiz देकर अपना revision check करें।</li>
+    <li>हर अध्याय के सूत्र समझकर याद करें।</li>
+    <li>उदाहरणों को कॉपी में स्वयं हल करें।</li>
+    <li>गलत हुए सवालों को दोबारा हल करें।</li>
+    <li>रोज थोड़ा समय गणित के अभ्यास को दें।</li>
   </ul>
 </section>
 
-</div>
+</main>
 
 <footer>
-  <p>© 2026 Ansh Maths Study</p>
-  <p>Made for Class 10 Students ❤️</p>
+  <p>© 2026 Ansh Maths Academy</p>
+  <p>MP Board Class 10 Maths | हिंदी माध्यम</p>
 </footer>
 
 <script>
+const chapters = [
+  "वास्तविक संख्याएँ",
+  "बहुपद",
+  "दो चर वाले रैखिक समीकरण युग्म",
+  "द्विघात समीकरण",
+  "समांतर श्रेढ़ियाँ",
+  "त्रिभुज",
+  "निर्देशांक ज्यामिति",
+  "त्रिकोणमिति का परिचय",
+  "त्रिकोणमिति के कुछ अनुप्रयोग",
+  "वृत्त",
+  "वृत्तों से संबंधित क्षेत्रफल",
+  "पृष्ठीय क्षेत्रफल और आयतन",
+  "सांख्यिकी"
+];
+
+function renderChapters(list){
+  const box = document.getElementById("chapterList");
+  box.innerHTML = "";
+
+  list.forEach(name => {
+    const div = document.createElement("div");
+    div.className = "chapter";
+
+    const title = document.createElement("h3");
+    title.textContent = name;
+
+    const btn = document.createElement("button");
+    btn.textContent = "पढ़ें";
+    btn.onclick = () => {
+      if(name === chapters[0]){
+        document.getElementById("study").scrollIntoView({
+          behavior:"smooth"
+        });
+      }else{
+        alert(
+          "इस अध्याय के विस्तृत प्रश्न-उत्तर जल्द जोड़े जा सकते हैं। " +
+          "अभी अध्याय 1 के प्रश्न-उत्तर उपलब्ध हैं।"
+        );
+      }
+    };
+
+    div.appendChild(title);
+    div.appendChild(btn);
+    box.appendChild(div);
+  });
+}
+
+function searchChapters(){
+  const term = document.getElementById("search")
+    .value.trim().toLowerCase();
+
+  renderChapters(
+    chapters.filter(ch => ch.toLowerCase().includes(term))
+  );
+}
+
+function toggleAnswer(id){
+  document.getElementById(id).classList.toggle("hidden");
+}
 
 function toggleDark(){
   document.body.classList.toggle("dark");
 }
 
-function searchQuestions(){
+const quiz = [
+  {
+    q:"1. 135 और 225 का HCF कितना है?",
+    options:["15","25","45","75"],
+    correct:2
+  },
+  {
+    q:"2. 140 का अभाज्य गुणनखंड कौन-सा है?",
+    options:["2² × 5 × 7","2 × 5 × 7","2³ × 5","2 × 7²"],
+    correct:0
+  },
+  {
+    q:"3. √2 कैसी संख्या है?",
+    options:["प्राकृतिक","पूर्णांक","परिमेय","अपरिमेय"],
+    correct:3
+  },
+  {
+    q:"4. 12 और 18 का LCM कितना है?",
+    options:["6","18","36","72"],
+    correct:2
+  }
+];
 
-  let input =
-    document.getElementById("search").value.toLowerCase();
+let quizIndex = 0;
+let score = 0;
+let answered = false;
 
-  let questions =
-    document.querySelectorAll(".question");
+function showQuestion(){
+  const item = quiz[quizIndex];
+  document.getElementById("quizQuestion").textContent = item.q;
 
-  questions.forEach(function(question){
+  const options = document.getElementById("quizOptions");
+  options.innerHTML = "";
+  document.getElementById("quizResult").textContent = "";
+  answered = false;
 
-    let text =
-      question.innerText.toLowerCase();
-
-    if(text.includes(input)){
-      question.style.display = "block";
-    }else{
-      question.style.display = "none";
-    }
-
+  item.options.forEach((option,index) => {
+    const btn = document.createElement("button");
+    btn.className = "option";
+    btn.textContent = option;
+    btn.onclick = () => checkQuiz(index);
+    options.appendChild(btn);
   });
 }
 
-function checkAnswer(answer){
+function checkQuiz(index){
+  if(answered) return;
+  answered = true;
 
-  let result =
-    document.getElementById("result");
+  const item = quiz[quizIndex];
+  const result = document.getElementById("quizResult");
 
-  if(answer === 2){
-    result.innerHTML =
-      "✅ Correct! HCF of 12 and 18 is 6.";
-    result.style.color = "green";
+  if(index === item.correct){
+    score++;
+    result.textContent = "✅ सही उत्तर!";
+    result.style.color = "#16a34a";
   }else{
-    result.innerHTML =
-      "❌ Incorrect. Try again!";
-    result.style.color = "red";
+    result.textContent =
+      "❌ सही उत्तर: " + item.options[item.correct];
+    result.style.color = "#ef4444";
   }
 }
 
+function nextQuestion(){
+  if(!answered){
+    document.getElementById("quizResult").textContent =
+      "पहले एक उत्तर चुनिए।";
+    return;
+  }
+
+  quizIndex++;
+
+  if(quizIndex >= quiz.length){
+    document.getElementById("quizQuestion").textContent =
+      "क्विज़ पूरा हुआ! आपका स्कोर: " + score + "/" + quiz.length;
+
+    document.getElementById("quizOptions").innerHTML = "";
+    document.getElementById("quizResult").textContent =
+      "शानदार प्रयास! दोबारा अभ्यास करने के लिए नीचे बटन दबाएँ।";
+
+    score = 0;
+    quizIndex = -1;
+    answered = true;
+    document.querySelector("#quiz button:last-child").textContent =
+      "फिर से खेलें";
+    return;
+  }
+
+  showQuestion();
+}
+
+renderChapters(chapters);
+showQuestion();
 </script>
 
 </body>
-</html>
+  </html>
